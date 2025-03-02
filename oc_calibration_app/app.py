@@ -68,6 +68,7 @@ if uploaded_file:
         'fit_type' :  fit_type, 
         'fit_coef' :  coef.tolist(),
         'range'    :  {'min': abso.min(), 'max': abso.max()},
+        'slot': slot
         }
 
 
