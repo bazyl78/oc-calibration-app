@@ -15,7 +15,8 @@ test_name = st.text_input('Nazwa testu',value='FIRMA:PAR (0-234ppm)')
 
 units = st.text_input('Jednostka', value='ppm')
 
-led = st.number_input('LED (nm)', value = 630, min_value=0, max_value=1000, step=1, format='%d')
+#led = st.number_input('LED (nm)', value = 630, min_value=0, max_value=1000, step=1, format='%d')
+led = st.selectbox('Kolor LED', ('R', 'G', 'B')) 
 
 fit_type = st.selectbox('Dopasowanie', ('linear', 'polynomial')) 
 
