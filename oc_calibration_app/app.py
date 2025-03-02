@@ -11,6 +11,8 @@ st.title('OpenColorimeter-kalibracja-testow')
 
 st.subheader('Generuje pliki JSON dla Open Colorimeter')
 
+slot = st.selectbox('Slot', list(range(1, 6)))
+
 test_name = st.text_input('Nazwa testu',value='FIRMA:PAR (0-234ppm)')
 
 units = st.text_input('Jednostka', value='ppm')
